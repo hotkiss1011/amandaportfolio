@@ -26,7 +26,7 @@ export default function HomePage() {
               seeking to leverage development skills with emphasis on
               collaboration, communication, passion, and innovation.
             </p>
-            <a href="/about" className="inline-block px-6 py-2 bg-indigo-600 text-white rounded shadow hover:bg-indigo-700">About Me</a>
+            <a href="/about" className="inline-block px-6 py-2 bg-indigo-600 text-white font-medium rounded shadow hover:bg-indigo-700 transform hover:-translate-y-0.5 transition" title="Learn more about me">Learn More About Me</a>
           </div>
         </section>
 
@@ -36,7 +36,7 @@ export default function HomePage() {
             <p className="text-gray-400 mb-4">
               I love the process of turning ideas into interactive, functional webpages and apps. Front-end development fascinates me because it combines creativity with problem-solving. Here are some of the projects I&apos;ve enjoyed building — I&apos;m excited to keep learning and growing!
             </p>
-            <a href="/projects" className="inline-block px-6 py-2 bg-indigo-600 text-white rounded shadow hover:bg-indigo-700">My Works</a>
+            <a href="/projects" className="inline-block px-6 py-2 bg-indigo-600 text-white font-medium rounded shadow hover:bg-indigo-700 transform hover:-translate-y-0.5 transition" title="Full list of my projects">Explore My Work</a>
           </div>
           <div>
             <Image
