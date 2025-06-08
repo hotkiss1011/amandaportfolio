@@ -1,5 +1,3 @@
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 import Image from 'next/image';
 
 export default function HomePage() {
@@ -7,7 +5,7 @@ export default function HomePage() {
     <>
       <main className="max-w-5xl mx-auto px-4 py-8">
         <header className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-indigo-700">Amanda Hotchkiss</h1>
+          <h1 className="text-4xl font-bold text-indigo-800">Amanda Hotchkiss</h1>
           <h2 className="text-xl mt-2 text-gray-400">A Front-End Developer Based in Knoxville, TN, USA</h2>
         </header>
 
