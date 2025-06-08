@@ -44,7 +44,7 @@ export default function ProjectCard({
             rel="noopener noreferrer"
             className="inline-block px-6 py-2 bg-indigo-600 text-white rounded shadow hover:bg-indigo-700"
           >
-            App
+            Check out the app
           </a>
           <a
             href={githubLink}
@@ -52,7 +52,7 @@ export default function ProjectCard({
             rel="noopener noreferrer"
             className="inline-block px-6 py-2 bg-indigo-600 text-white rounded shadow hover:bg-indigo-700"
           >
-            GitHub
+            Check out the repo
           </a>
         </div>
       </div>
