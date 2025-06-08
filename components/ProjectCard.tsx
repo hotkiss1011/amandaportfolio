@@ -2,6 +2,7 @@ import Image from 'next/image';
 
 type ProjectCardProps = {
   title: string;
+  subtitle: string;
   imageSrc: string;
   imageAlt: string;
   appLink: string;
@@ -11,6 +12,7 @@ type ProjectCardProps = {
 
 export default function ProjectCard({
   title,
+  subtitle,
   imageSrc,
   imageAlt,
   appLink,
@@ -19,7 +21,7 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   return (
     <div
-      className={`grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 items-center ${
+      className={`flex gap-8 mb-12 items-center ${
         reverse ? 'md:flex-row-reverse' : ''
       }`}
     >
@@ -34,6 +36,7 @@ export default function ProjectCard({
       </div>
       <div>
         <h2 className="text-2xl font-semibold mb-4">{title}</h2>
+        <h3 className="text-xl mb-4">{subtitle}</h3>
         <div className="flex space-x-4">
           <a
             href={appLink}
