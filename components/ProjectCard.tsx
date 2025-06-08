@@ -42,7 +42,7 @@ export default function ProjectCard({
             href={appLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-6 py-2 bg-indigo-600 text-white rounded shadow hover:bg-indigo-700"
+            className="inline-block px-6 py-2 bg-indigo-600 text-white font-medium rounded shadow hover:bg-indigo-700 transform hover:-translate-y-0.5 transition"
           >
             Check out the app
           </a>
@@ -50,7 +50,7 @@ export default function ProjectCard({
             href={githubLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-6 py-2 bg-indigo-600 text-white rounded shadow hover:bg-indigo-700"
+            className="inline-block px-6 py-2 bg-indigo-600 text-white font-medium rounded shadow hover:bg-indigo-700 transform hover:-translate-y-0.5 transition"
           >
             Check out the repo
           </a>
