@@ -4,9 +4,19 @@ export default function AboutPage() {
   return (
     <>
       <main className="max-w-5xl mx-auto px-4 py-8">
-        <header className="text-center mb-12">
+        <header className="text-center mb-5">
           <h1 className="text-4xl font-bold text-indigo-700">About Me</h1>
         </header>
+
+        <div className='flex justify-center mb-12'>
+          <a
+            href="/Amanda_Hotchkiss_Resume.pdf"
+            download="Amanda_Hotchkiss_Resume.pdf"
+            className="inline-block px-6 py-2 bg-indigo-600 text-white font-medium rounded shadow hover:bg-indigo-700 transform hover:-translate-y-0.5 transition w-fit"
+          >
+            Download My Resume
+          </a>
+        </div>
 
         {/* First Section */}
         <section className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 items-center">

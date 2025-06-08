@@ -44,7 +44,7 @@ export default function ProjectCard({
             rel="noopener noreferrer"
             className="inline-block px-6 py-2 bg-indigo-600 text-white font-medium rounded shadow hover:bg-indigo-700 transform hover:-translate-y-0.5 transition"
           >
-            Check out the app
+            Live Demo
           </a>
           <a
             href={githubLink}
@@ -52,7 +52,7 @@ export default function ProjectCard({
             rel="noopener noreferrer"
             className="inline-block px-6 py-2 bg-indigo-600 text-white font-medium rounded shadow hover:bg-indigo-700 transform hover:-translate-y-0.5 transition"
           >
-            Check out the repo
+            View Code
           </a>
         </div>
       </div>

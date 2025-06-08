@@ -71,18 +71,9 @@ export default function ProjectsPage() {
   return (
     <>
       <main className="max-w-5xl mx-auto px-4 py-8">
-        <header className="mb-5 text-center gap-5">
+        <header className="mb-12 text-center gap-5">
           <h1 className="text-4xl font-bold text-indigo-700">My Projects</h1>
         </header>
-        <div className='flex justify-center mb-12'>
-          <a
-            href="/Amanda_Hotchkiss_Resume.pdf"
-            download="Amanda_Hotchkiss_Resume.pdf"
-            className="inline-block px-6 py-2 bg-indigo-600 text-white font-medium rounded shadow hover:bg-indigo-700 transform hover:-translate-y-0.5 transition w-fit"
-          >
-            Download My Resume
-          </a>
-        </div>
 
         {projects.map((project, index) => (
           <ProjectCard
