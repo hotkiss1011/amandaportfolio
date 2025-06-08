@@ -2,10 +2,16 @@ export default function ContactPage() {
   return (
     <>
       <main className="max-w-5xl mx-auto px-4 py-8">
-        <header className="text-center mb-12">
+        <header className="text-center mb-5">
           <h1 className="text-4xl font-bold text-indigo-700">Amanda Hotchkiss</h1>
           <h2 className="text-xl mt-2 text-gray-600">A Front-End Developer Based in Knoxville, TN, USA</h2>
         </header>
+        
+        <div className="flex justify-center mb-12">
+          <a href="mailto:..." className="inline-block px-6 py-2 bg-indigo-600 text-white font-medium rounded shadow hover:bg-indigo-700 transform hover:-translate-y-0.5 transition">
+            Send Me a Message
+          </a>
+        </div>
 
         <section className="text-lg text-gray-700 leading-relaxed mb-12">
           <h3 className="text-2xl font-semibold mb-4">Hello!</h3>
