@@ -1,0 +1,58 @@
+import Image from 'next/image';
+
+type ProjectCardProps = {
+  title: string;
+  imageSrc: string;
+  imageAlt: string;
+  appLink: string;
+  githubLink: string;
+  reverse?: boolean;
+};
+
+export default function ProjectCard({
+  title,
+  imageSrc,
+  imageAlt,
+  appLink,
+  githubLink,
+  reverse = false,
+}: ProjectCardProps) {
+  return (
+    <div
+      className={`grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 items-center ${
+        reverse ? 'md:flex-row-reverse' : ''
+      }`}
+    >
+      <div className="flex justify-center">
+        <Image
+          src={imageSrc}
+          alt={imageAlt}
+          width={400}
+          height={400}
+          className="rounded-lg shadow object-cover w-auto h-auto max-w-[300px] md:max-w-[400px]"
+        />
+      </div>
+      <div>
+        <h2 className="text-2xl font-semibold mb-4">{title}</h2>
+        <div className="flex space-x-4">
+          <a
+            href={appLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-6 py-2 bg-indigo-600 text-white rounded shadow hover:bg-indigo-700"
+          >
+            App
+          </a>
+          <a
+            href={githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-6 py-2 bg-indigo-600 text-white rounded shadow hover:bg-indigo-700"
+          >
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
